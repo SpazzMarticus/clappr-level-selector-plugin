@@ -112,12 +112,10 @@ export default class LevelSelector extends UICorePlugin {
         for(var levelId in this.levels) {
             level = this.levels[levelId]
             label = labels[level.id] 
-            if(labelCallback)
-            {
+            if(labelCallback) {
                 level.label = labelCallback(level,label)
             }
-            else if(label)
-            {
+            else if(label) {
                 level.label = label
             }
         }
